@@ -4,7 +4,7 @@ const axios = require('axios');
 
 async function makeGetRequest(url) {
   try {
-      const response = await axios.get(apiUrl);
+      const response = await axios.get(url);
       core.setOutput('Response:', response.data);
   } catch (error) {
       core.setFailed('Error:', error);
