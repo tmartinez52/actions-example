@@ -6,6 +6,10 @@ inputs:
     description: "A name input"
     required: true
     default: "World"
+  sw:
+    description: "See if on"
+    required: true
+    default: true
 runs:
   using: "node20"
   main: "index.js"
