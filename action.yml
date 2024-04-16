@@ -8,7 +8,7 @@ inputs:
     default: "World"
   sw:
     description: "See if on"
-    required: true
+    #required: true
     default: true
 runs:
   using: "node20"
