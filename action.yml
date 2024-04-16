@@ -9,7 +9,6 @@ inputs:
   sw:
     description: "See if on"
     required: false
-    required: true
     default: true
 runs:
   using: "node20"
