@@ -5,7 +5,8 @@ const axios = require('axios');
 async function makeGetRequest(url) {
   try {
       const response = await axios.get(url);
-      core.setOutput('Response:', response.data);
+      //core.setOutput('Response:', response.data);
+      console.log('Response: ', response.data);
   } catch (error) {
       core.setFailed('Error:', error);
   }
