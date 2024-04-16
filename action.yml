@@ -1,0 +1,11 @@
+name: "Hello User"
+description: "A Hello World Action"
+author: "Tim Martinez"
+inputs:
+  name:
+    description: "A name input"
+    required: true
+    default: "World"
+runs:
+  using: "node12"
+  main: "index.js"
