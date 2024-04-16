@@ -1,16 +1,10 @@
 const core = require('@actions/core');
+const axios = require('axios');
+
 
 try {
-  const nameToGreet = core.getInput('name');
-  const isOn = core.getBooleanInput('sw');
-
-  console.log(`Hello ${nameToGreet}!`);
-  if (isOn) {
-    console.log("switch is on");
-  } else {
-    console.log("switch is off");
-  }
-  core.setOutput("greeting", `Hello ${nameToGreet}!`);
-} catch (error) {
-  core.setFailed(error.message);
+  const response = await axios.get(apiUrl);
+  core.setOutput('Response:', response.data);
+  } catch (error) {
+  core.setFailed('Error:', error);
 }

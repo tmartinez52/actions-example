@@ -2,14 +2,10 @@ name: "Hello User"
 description: "A Hello World Action"
 author: "Tim Martinez"
 inputs:
-  name:
-    description: "A name input"
+  url:
+    description: "A url to send a get command"
     required: true
-    default: "World"
-  sw:
-    description: "See if on"
-    required: false
-    default: true
+    default: "https://google.com"
 runs:
   using: "node20"
   main: "index.js"
