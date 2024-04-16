@@ -5,7 +5,7 @@ try {
   const isOn = core.getBooleanInput('sw');
 
   console.log(`Hello ${nameToGreet}!`);
-  if (sw) {
+  if (isOn) {
     console.log("switch is on");
   } else {
     console.log("switch is off");

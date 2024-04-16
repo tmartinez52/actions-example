@@ -8,7 +8,11 @@ inputs:
     default: "World"
   sw:
     description: "See if on"
+<<<<<<< HEAD
     required: false
+=======
+    required: true
+>>>>>>> 92654f3 (fixing typo)
     default: true
 runs:
   using: "node20"
